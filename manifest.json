@@ -1,0 +1,15 @@
+{
+     "manifest_version": 2,
+     "name": "订餐提醒",
+     "version": "1.0",
+     "icons": {
+      "128": "icon.png",
+      "16": "icon.png",
+      "19": "icon.png",
+      "48": "icon.png"
+     },
+     "description": "3点半定时提醒订餐",
+     "background": { "scripts": ["background.js"] },
+     "web_accessible_resources": ["icon.png"],
+     "permissions": ["tabs","notifications","alarms"]
+}
