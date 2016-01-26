@@ -9,7 +9,7 @@ function show() {
   chrome.notifications.create('',opt,function(id){})
 }
 
-function checkForTime() {
+function dinnerRemind() {
     var myDate = new Date();
     if(myDate.getDay != 0 && myDate.getDay != 6 && myDate.getHours() == 15 && myDate.getMinutes() == 30){
         show();
@@ -19,4 +19,4 @@ function checkForTime() {
         chrome.tabs.create(createProperties, function(tab){});
     }
 }
-setInterval(checkForTime, 31000);
+setInterval(dinnerRemind, 33000);
